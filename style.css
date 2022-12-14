@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  /*..................so that padding, border and margin are all included in the width*/
+}
+
+.body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.whole-calc {
+  /*......consists of screen and buttons section*/
+  /*....for bringing calculator to the center of the screen*/
+  /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;*/
+  background-color: black;
+  width: 400px;
+}
+.calc-screen {
+  display: flex; /*.........................instead of this text-align: center; could also be used....*/
+  border: 1px solid black;
+  height: 75px; /*width: 400px;............................no need*/
+  background-color: black;
+  color: white; /*font color*/
+  font-size: xx-large;
+  justify-content: flex-end; /*text aligned to right*/
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+
+.calc-buttons {
+  /*border: 1px solid black;..................no need*/
+  /*width: 400px;.............................no need*/
+  /*background-color: black;..................no need*/
+  border-radius: 0;
+}
+
+.calc-button:hover {
+  /*pseudoclass hover*/
+  background-color: #ebebeb;
+}
+
+.calc-button:active {
+  /*pseudoclass active*/
+  background-color: #bbbcbe;
+}
+
+.calc-button {
+  font-size: 40px;
+  margin-right: 0.1px;
+  background-color: #d8d9db;
+  color: black; /*change to black------*/
+  height: 100px; /*.......................cool*/
+  cursor: pointer; /*.......................important*/
+}
+
+.calc-button:last-child {
+  /*pseudoclass last child*/
+  background-color: #df974c;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  /*.............pseudo-class*/
+  background-color: #f7bc7e;
+  margin-right: 0px;
+}
+
+.calc-button:last-child:active {
+  /*.............pseudo-class*/
+  background-color: #dd8d37;
+}
+
+.rows {
+  /*.........................................important......................*/
+  display: flex; /*..........................always applied to parent........*/
+  align-items: stretch; /*...................when using this remember not to specify height explicitly else it will overwrite the stretch*/
+  justify-content: space-between;
+  margin-bottom: 0.5px;
+}
+
+.four-buttons {
+  width: 100px; /*..........................400/4=100*/
+}
+
+.three-buttons-clear {
+  width: 200px; /*..........................100*2=200*/
+}
+
+.two-buttons-zero {
+  width: 300px; /*..........................100*3=282*/
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="whole-calc">
+      <!--....................................................................screen started-->
+      <section class="calc-screen">0</section>
+      <!--....................................................................buttons started-->
+      <section class="calc-buttons">
+        <div class="rows">
+          <!--first row contains three buttons-->
+          <button class="three-buttons-clear calc-button">C</button>
+          <button class="four-buttons calc-button">←</button>
+          <button class="four-buttons calc-button">÷</button>
+        </div>
+        <div class="rows">
+          <!--second row contains 4 buttons-->
+          <button class="four-buttons calc-button">7</button>
+          <button class="four-buttons calc-button">8</button>
+          <button class="four-buttons calc-button">9</button>
+          <button class="four-buttons calc-button">×</button>
+        </div>
+        <div class="rows">
+          <!--third row also contains 4 buttons-->
+          <button class="four-buttons calc-button">4</button>
+          <button class="four-buttons calc-button">5</button>
+          <button class="four-buttons calc-button">6</button>
+          <button class="four-buttons calc-button">-</button>
+        </div>
+        <div class="rows">
+          <!--fourth row also contains 4 buttons-->
+          <button class="four-buttons calc-button">1</button>
+          <button class="four-buttons calc-button">2</button>
+          <button class="four-buttons calc-button">3</button>
+          <button class="four-buttons calc-button">+</button>
+        </div>
+        <div class="rows">
+          <!--last row contains only 2 buttons-->
+          <button class="two-buttons-zero calc-button">0</button>
+          <button class="four-buttons calc-button">=</button>
+        </div>
+      </section>
+      <!--closing of calc-buttons section-->
+    </div>
+    <!--closing of whole-calc div-->
+    <script src="./calculator.js"></script>
+    <!--...................................its a good practice to write script tag just before closing the body tag so that it loads in the end after all the html ans css have been downloaded because then the user has to wait less as at least the structure is visible to the user.-->
+  </body>
+</html>
